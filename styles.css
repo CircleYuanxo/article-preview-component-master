@@ -13,8 +13,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 800px;
-  height: 600px;
+  width: 100vh;
+  height: 100vh;
 }
 
 .img-container {
