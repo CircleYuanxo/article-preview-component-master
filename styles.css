@@ -1,0 +1,197 @@
+body {
+  height: 100%;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* containers */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 600px;
+}
+
+.img-container {
+  /* width: 28%;
+  height: 40.5%; */
+  width: 240px;
+  height: 240px;
+  border-radius: 10px 0 0 10px;
+}
+
+.text-container {
+  /* width: 40%;
+  height: 30%; */
+  width: 320px;
+  height: 190px;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  padding: 25px 35px;
+}
+
+/* IMG part at left */
+.img-drawers {
+  width: 130%;
+  height: 100%;
+  border-radius: 10px
+}
+
+/* Text part at right*/
+.heading {
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-top: 0;
+  margin-top: 0;
+  color: hsl(217, 19%, 35%);
+}
+
+.content {
+  color: hsl(214, 17%, 51%);
+  font-size: 0.7rem;
+  line-height: 1.5;
+  margin-bottom: 6%;
+}
+
+/* Name Section */
+.name-section {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+/* Inside name section */
+.img-michelle {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+.name-text {
+  margin-left: 5%;
+}
+
+.name-text p {
+  margin: 0;
+  color: hsl(217, 19%, 35%);
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.name-text .date {
+  color: hsl(212, 23%, 69%);
+  font-weight: normal;
+}
+
+.name-sharebtn {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  background-color: hsl(210, 46%, 95%);
+  padding: 2%;
+  border-radius: 100%;
+}
+
+.name-sharebtn:hover {
+  background-color: hsl(212, 23%, 69%);
+}
+
+/* Share Toggle */
+.sharetoggle {
+  position: absolute;
+  top: -70px;
+  right: -105px;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 6px 18px 2px;
+  ;
+}
+
+.sharetoggle img {
+  margin: 0;
+  padding: 0;
+}
+
+.sharetoggle p {
+  color: hsl(212, 23%, 69%);
+  padding: 0 5px 0 0;
+}
+
+.sharetoggle div {
+  padding: 0 4%;
+}
+
+.sharetoggle::after {
+  content: "";
+  position: absolute;
+  top: 51px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid hsl(217, 19%, 35%);
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
+
+@media screen and (max-width: 375px) {
+  .main-container {
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: 600px;
+  }
+
+  .img-container {
+    width: 310px;
+    height: 180px;
+  }
+
+  .img-drawers {
+    width: 100%;
+    height: 120%;
+  }
+
+  .text-container {
+    width: 240px;
+    height: 250px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .content {
+    margin-bottom: 15%;
+  }
+
+  .sharetoggle {
+    top: -17px;
+    right: -35px;
+    width: 275px;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+    justify-content: flex-start;
+  }
+  .sharetoggle::after {
+    border: none;
+  }
+
+  .sharetoggle img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sharetoggle p {
+    color: hsl(212, 23%, 69%);
+    padding: 0 5px 0 0;
+  }
+
+  .sharetoggle div {
+    padding: 0 3%;
+  }
+}
